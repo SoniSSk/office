@@ -23,7 +23,7 @@ function Dashboard() {
 
 
  const registerAPI = async () =>{
-   const response  = await fetch('/api/register',{
+   const response  = await fetch('/api/hello',{
        method:'POST',
        header:{'Content-Type':'application/json'}, body:JSON.stringify({
            name  : 'Kuldeep',
@@ -77,7 +77,7 @@ useEffect(() => {
         margin: "auto",
         width: 200,
         border: 5,
-        borderColor: "red",
+        borderColor: "grey",
         borderStyle:"solid",
         borderRadius:20,
         padding: 10,}}>

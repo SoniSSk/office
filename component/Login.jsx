@@ -23,7 +23,7 @@ function Dashboard() {
 
 
  const registerAPI = async () =>{
-   const response  = await fetch('/api/register',{
+   const response  = await fetch('/api/user',{
        method:'POST',
        header:{'Content-Type':'application/json'}, body:JSON.stringify({
            name  : 'Kuldeep',
@@ -85,7 +85,7 @@ else {
                 margin: "auto",
                 width: 200,
                 border: 5,
-                borderColor: "red",
+                borderColor: "grey",
                 borderStyle:"solid",
                 borderRadius:20,
                 padding: 10,}}>
@@ -93,7 +93,7 @@ else {
                 <lable> <b style={{backgroundColor:'skyblue'}}>Login </b> </lable><br/><br/>
                 <lable> Email:<input type = "email" value= {email} onChange= {handelchangeEmail} placeholder="Enter email"></input></lable><br/><br/>
                 <lable> Password:<input  type = "text" value= {password} onChange= {handelchangepassword} placeholder="Enter password"></input></lable><br/><br/>
-                <input  type ="button" onClick={onSubmitCall} value="Login" /><br/>
+                <input  type ="button" onClick={onSubmitCall} value="Login" /><br/><br/><br/>
                 <input  type ="button" onClick={onSubmitCallSignup} value="Signup" />
                 </form>
                 </div>
